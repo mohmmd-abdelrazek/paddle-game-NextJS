@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply m-0 box-border list-none border-none p-0 no-underline outline-none;
+  }
+
+  body {
+    @apply flex h-screen w-full items-center justify-center bg-gradient-to-r from-red-900 via-yellow-200 to-green-900;
+  }
+
+  #board {
+    @apply bg-gradient-to-r from-red-900 via-yellow-200 to-green-900;
+  }
+
+  button {
+    @apply block h-10 w-[150px] cursor-pointer rounded-lg bg-slate-800 px-3 py-2 text-center text-[16px] font-bold text-white hover:bg-black;
+  }
+}
